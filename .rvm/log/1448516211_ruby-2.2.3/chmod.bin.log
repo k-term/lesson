@@ -1,0 +1,25 @@
+[2015-11-26 05:45:12] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/vagrant/.rvm/src/ruby-2.2.3
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin
+command(8): __rvm_set_executable /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/erb /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/gem /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/irb /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/rake /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/rdoc /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/ri /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/ruby
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/erb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/gem ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/irb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/rake ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/rdoc ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/ri ]]
+++ for __file in '"$@"'
+++ [[ -x /home/vagrant/.rvm/rubies/ruby-2.2.3/bin/ruby ]]

@@ -1,0 +1,10 @@
+/home/vagrant/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20151126-25870-15qej6a.rb extconf.rb
+
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  Stop.
+
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+make "DESTDIR=" install
+make: Nothing to be done for 'install'.

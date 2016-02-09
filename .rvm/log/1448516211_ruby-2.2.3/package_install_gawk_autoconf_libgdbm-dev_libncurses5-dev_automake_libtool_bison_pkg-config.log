@@ -1,0 +1,115 @@
+[2015-11-26 05:37:38] requirements_debian_libs_install
+requirements_debian_libs_install () 
+{ 
+    __rvm_try_sudo apt-get --no-install-recommends --yes install "$@" || return $?
+}
+current path: /home/vagrant
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin
+command(9): requirements_debian_libs_install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config
+++ __rvm_try_sudo apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config'\'': ' apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config
+++ command sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config'\'': ' apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config
+++ sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config'\'': ' apt-get --no-install-recommends --yes install gawk autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autotools-dev libbison-dev libsigsegv2 m4
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc gettext bison-doc gawk-doc
+  ncurses-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+Recommended packages:
+  libltdl-dev
+The following NEW packages will be installed:
+  autoconf automake autotools-dev bison gawk libbison-dev libgdbm-dev
+  libncurses5-dev libsigsegv2 libtool m4 pkg-config
+0 upgraded, 12 newly installed, 0 to remove and 92 not upgraded.
+Need to get 2,496 kB of archives.
+After this operation, 9,630 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ vivid/main libsigsegv2 amd64 2.10-4 [14.1 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ vivid/main gawk amd64 1:4.1.1+dfsg-1 [393 kB]
+Get:3 http://archive.ubuntu.com/ubuntu/ vivid/main m4 amd64 1.4.17-4 [193 kB]
+Get:4 http://archive.ubuntu.com/ubuntu/ vivid/main autoconf all 2.69-8 [321 kB]
+Get:5 http://archive.ubuntu.com/ubuntu/ vivid/main autotools-dev all 20140911.1 [39.6 kB]
+Get:6 http://archive.ubuntu.com/ubuntu/ vivid/main automake all 1:1.14.1-3ubuntu1 [510 kB]
+Get:7 http://archive.ubuntu.com/ubuntu/ vivid/main libbison-dev amd64 2:3.0.2.dfsg-2 [338 kB]
+Get:8 http://archive.ubuntu.com/ubuntu/ vivid/main bison amd64 2:3.0.2.dfsg-2 [257 kB]
+Get:9 http://archive.ubuntu.com/ubuntu/ vivid/main libgdbm-dev amd64 1.8.3-13.1 [35.9 kB]
+Get:10 http://archive.ubuntu.com/ubuntu/ vivid/main libncurses5-dev amd64 5.9+20140712-2ubuntu2 [175 kB]
+Get:11 http://archive.ubuntu.com/ubuntu/ vivid/main libtool all 2.4.2-1.11 [180 kB]
+Get:12 http://archive.ubuntu.com/ubuntu/ vivid/main pkg-config amd64 0.28-1ubuntu1 [40.0 kB]
+Fetched 2,496 kB in 28s (87.8 kB/s)
+Selecting previously unselected package libsigsegv2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64139 files and directories currently installed.)
+Preparing to unpack .../libsigsegv2_2.10-4_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-4) ...
+Setting up libsigsegv2:amd64 (2.10-4) ...
+Processing triggers for libc-bin (2.21-0ubuntu4) ...
+Selecting previously unselected package gawk.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64147 files and directories currently installed.)
+Preparing to unpack .../gawk_1%3a4.1.1+dfsg-1_amd64.deb ...
+Unpacking gawk (1:4.1.1+dfsg-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-4_amd64.deb ...
+Unpacking m4 (1.4.17-4) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-8_all.deb ...
+Unpacking autoconf (2.69-8) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20140911.1_all.deb ...
+Unpacking autotools-dev (20140911.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3ubuntu1_all.deb ...
+Unpacking automake (1:1.14.1-3ubuntu1) ...
+Selecting previously unselected package libbison-dev:amd64.
+Preparing to unpack .../libbison-dev_2%3a3.0.2.dfsg-2_amd64.deb ...
+Unpacking libbison-dev:amd64 (2:3.0.2.dfsg-2) ...
+Selecting previously unselected package bison.
+Preparing to unpack .../bison_2%3a3.0.2.dfsg-2_amd64.deb ...
+Unpacking bison (2:3.0.2.dfsg-2) ...
+Selecting previously unselected package libgdbm-dev.
+Preparing to unpack .../libgdbm-dev_1.8.3-13.1_amd64.deb ...
+Unpacking libgdbm-dev (1.8.3-13.1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140712-2ubuntu2_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140712-2ubuntu2) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.11_all.deb ...
+Unpacking libtool (2.4.2-1.11) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1ubuntu1_amd64.deb ...
+Unpacking pkg-config (0.28-1ubuntu1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for install-info (5.2.0.dfsg.1-6) ...
+Setting up gawk (1:4.1.1+dfsg-1) ...
+Setting up m4 (1.4.17-4) ...
+Setting up autoconf (2.69-8) ...
+Setting up autotools-dev (20140911.1) ...
+Setting up automake (1:1.14.1-3ubuntu1) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up libbison-dev:amd64 (2:3.0.2.dfsg-2) ...
+Setting up bison (2:3.0.2.dfsg-2) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Setting up libgdbm-dev (1.8.3-13.1) ...
+Setting up libncurses5-dev:amd64 (5.9+20140712-2ubuntu2) ...
+Setting up libtool (2.4.2-1.11) ...
+Setting up pkg-config (0.28-1ubuntu1) ...
